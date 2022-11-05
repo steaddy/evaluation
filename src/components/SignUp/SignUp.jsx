@@ -10,7 +10,7 @@ const SignUp = () => {
     };
     return (
         <div className="sign-up">
-            <h1>Sign Up</h1>
+            <h1>Регистрация</h1>
             <Form
                 name="normal_login"
                 className="login-form"
@@ -24,7 +24,7 @@ const SignUp = () => {
                     rules={[
                         {
                             required: true,
-                            message: 'Please input your Username!',
+                            message: 'Пожалуйста, введите имя!',
                         },
                     ]}
                 >
@@ -37,14 +37,14 @@ const SignUp = () => {
                     rules={[
                         {
                             required: true,
-                            message: 'Please input your Password!',
+                            message: 'Пожалуйста, введите пароль!',
                         },
                     ]}
                 >
                     <Input
                         prefix={<LockOutlined className="site-form-item-icon"/>}
                         type="password"
-                        placeholder="Password"
+                        placeholder="Пароль"
                     />
                 </Form.Item>
 
@@ -55,7 +55,7 @@ const SignUp = () => {
                     rules={[
                         {
                             required: true,
-                            message: 'Please confirm your password!',
+                            message: 'Пожалуйста, подтвердите пароль!',
                         },
                         ({ getFieldValue }) => ({
                             validator(_, value) {
@@ -70,38 +70,26 @@ const SignUp = () => {
                     <Input.Password
                         prefix={<LockOutlined className="site-form-item-icon"/>}
                         type="password"
-                        placeholder="Confirm password"/>
+                        placeholder="Подтвердите пароль"/>
                 </Form.Item>
-                {/*
-                <Form.Item>
-                    <Form.Item name="remember" valuePropName="checked" noStyle>
-                        <Checkbox>Remember me</Checkbox>
-                    </Form.Item>
-
-                    <a className="login-form-forgot" href="">
-                        Forgot password
-                    </a>
-                </Form.Item>
-*/}
-
 
                 <Form.Item
                     name="email"
                     rules={[
                         {
                             type: 'email',
-                            message: 'The input is not valid E-mail!',
+                            message: 'Пожалуйста, ведите правильный адрес!',
                         },
                         {
                             required: true,
-                            message: 'Please input your E-mail!',
+                            message: 'Пожалуйста, введите адрес почты!',
                         },
                     ]}
                 >
                     <Input
                         prefix={<MailOutlined className="site-form-item-icon"/>}
                         type="email"
-                        placeholder="Email"/>
+                        placeholder="Почтовый адрес"/>
                 </Form.Item>
 
 
@@ -109,10 +97,10 @@ const SignUp = () => {
 
                 <Form.Item>
                     <Button type="primary" htmlType="submit" className="btn login-form-button">
-                        Sign Up
+                        Зарегистрироваться
                     </Button>
                     <NavLink to='/'>
-                        <Button type='primary' className="btn">Log in</Button>
+                        <Button type='link' className="btn">Войти</Button>
                     </NavLink>
                 </Form.Item>
             </Form>

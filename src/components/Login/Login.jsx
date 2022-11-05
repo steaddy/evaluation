@@ -12,7 +12,7 @@ const Login = () => {
     };
     return (
         <div className="login">
-            <h1>Login</h1>
+            <h1>Вход</h1>
             <Form
                 name="normal_login"
                 className="login-form"
@@ -26,25 +26,25 @@ const Login = () => {
                     rules={[
                         {
                             required: true,
-                            message: 'Please input your Username!',
+                            message: 'Пожалуйста, введите имя пользователя!',
                         },
                     ]}
                 >
-                    <Input prefix={<UserOutlined className="site-form-item-icon"/>} placeholder="Username"/>
+                    <Input prefix={<UserOutlined className="site-form-item-icon"/>} placeholder="Имя пользователя"/>
                 </Form.Item>
                 <Form.Item
                     name="password"
                     rules={[
                         {
                             required: true,
-                            message: 'Please input your Password!',
+                            message: 'Пожалуйста, введите пароль!',
                         },
                     ]}
                 >
                     <Input
                         prefix={<LockOutlined className="site-form-item-icon"/>}
                         type="password"
-                        placeholder="Password"
+                        placeholder="Пароль"
                     />
                 </Form.Item>
                 {/*
@@ -60,13 +60,20 @@ const Login = () => {
 */}
                 <Form.Item>
                     <Button type="primary" htmlType="submit" className="btn login-form-button">
-                        Log in
+                        Войти
                     </Button>
                     <NavLink to='/sign-up'>
-                        <Button type='primary' className="btn">Sign Up</Button>
+                        <Button type='link' className="btn">Зарегистрироватьcя</Button>
                     </NavLink>
                 </Form.Item>
             </Form>
+
+
+
+
+
+
+
         </div>
     );
 

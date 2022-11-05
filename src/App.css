@@ -3,11 +3,11 @@
     max-width: 1920px;
     min-width: 960px;
     margin: auto;
-    min-height: 100vh;
 }
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 55vh;
 }
