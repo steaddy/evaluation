@@ -2,8 +2,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 100px;
-    background-color: beige;
+    background: transparent;
     position: relative;
 }
 
@@ -16,4 +15,13 @@
     top: 10px;
     left: 20px;
     height: 80px;
+}
+
+.header_h1 {
+    text-align: center;
+    display: inline-block;
+    width: 600px;
+    margin: 170px auto 20px;
+    font-size: 40px;
+    line-height: 48px;
 }

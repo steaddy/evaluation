@@ -3,6 +3,7 @@ import React from "react";
 import {Button, Checkbox, Form, Input} from 'antd';
 import {useForm} from "react-hook-form";
 import './Login.css';
+import {NavLink} from "react-router-dom";
 
 const Login = () => {
 
@@ -46,6 +47,7 @@ const Login = () => {
                         placeholder="Password"
                     />
                 </Form.Item>
+                {/*
                 <Form.Item>
                     <Form.Item name="remember" valuePropName="checked" noStyle>
                         <Checkbox>Remember me</Checkbox>
@@ -55,12 +57,14 @@ const Login = () => {
                         Forgot password
                     </a>
                 </Form.Item>
-
+*/}
                 <Form.Item>
-                    <Button type="primary" htmlType="submit" className="login-form-button">
+                    <Button type="primary" htmlType="submit" className="btn login-form-button">
                         Log in
                     </Button>
-                    Or <a href="">register now!</a>
+                    <NavLink to='/sign-up'>
+                        <Button type='primary' className="btn">Sign Up</Button>
+                    </NavLink>
                 </Form.Item>
             </Form>
         </div>

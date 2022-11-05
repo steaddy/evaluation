@@ -8,6 +8,8 @@ import logo from './logo.jpg';
 const Header = () => {
     return (
         <div className='header'>
+            <h1 className='header_h1'>Расчет рыночной стоимости жилой недвижимости города Москвы</h1>
+            {/*
             <img className='logo' src={logo}/>
             <NavLink to='/'>
                 <Button type='primary' className="btn">Login</Button>
@@ -15,6 +17,9 @@ const Header = () => {
             <NavLink to='/sign-up'>
                 <Button type='primary' className="btn">Sign Up</Button>
             </NavLink>
+            */}
+
+
         </div>
     );
 };

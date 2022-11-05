@@ -1,6 +1,7 @@
 .main-container {
-    background: #F3F7FA;
-    width: 960px;
+    background: #15273F;
+    max-width: 1920px;
+    min-width: 960px;
     margin: auto;
     min-height: 100vh;
 }
