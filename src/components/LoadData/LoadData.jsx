@@ -5,12 +5,12 @@ import './LoadData.css';
 
 
 const props = {
-    action: 'http://178.170.242.214:8080/excel',
+    action: 'https://178.170.242.214:8080/excel',
     listType: 'picture',
     previewFile(file) {
         console.log('Your upload file:', file);
         // Your process logic. Here we just mock to the same file
-        return fetch('http://178.170.242.214:8080/excel', {
+        return fetch('https://178.170.242.214:8080/excel', {
             method: 'POST',
             body: file,
         })

@@ -1,15 +1,17 @@
 import {LockOutlined, UserOutlined, MailOutlined} from '@ant-design/icons';
 import {Button, Checkbox, Form, Input} from 'antd';
 import React from "react";
-import './SignUp.css';
+import classes from './SignUp.module.css';
 import {NavLink} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {setUser} from "../../store/slices/userSlice";
 
 const SignUp = () => {
     const onFinish = (values) => {
         console.log('Received values of form: ', values);
     };
     return (
-        <div className="sign-up">
+        <div className={classes["sign-up"]}>
             <h1>Регистрация</h1>
             <Form
                 name="normal_login"
@@ -96,11 +98,11 @@ const SignUp = () => {
 
 
                 <Form.Item>
-                    <Button type="primary" htmlType="submit" className="btn login-form-button">
+                    <Button type="primary" htmlType="submit" className={classes["btn login-form-button"]}>
                         Зарегистрироваться
                     </Button>
-                    <NavLink to='/'>
-                        <Button type='link' className="btn">Войти</Button>
+                    <NavLink to='/login'>
+                        <Button type='link' className={classes["btn"]}>Войти</Button>
                     </NavLink>
                 </Form.Item>
             </Form>
